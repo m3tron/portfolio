@@ -1,1 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
 
+html {
+  font-family: "Major Mono Display", monospace;
+}
+
+#hero {
+  background: #000000;
+  color: #ffffff;
+  height: 100vh;
+}
+
+#hero-text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
