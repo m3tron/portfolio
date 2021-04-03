@@ -1,4 +1,3 @@
-import "normalize.css";
 import "@styles/styles.css";
 import Head from "next/head";
 
