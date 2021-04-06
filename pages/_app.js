@@ -1,3 +1,4 @@
+import "normalize.css";
 import "@styles/global.css";
 import Head from "next/head";
 

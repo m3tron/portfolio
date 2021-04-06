@@ -1,7 +1,7 @@
 const Hero = () => (
-  <div>
+  <section id="hero" className="section">
     <h1>Sunny Heyar</h1>
-  </div>
+  </section>
 );
 
 export default Hero;
