@@ -2,7 +2,9 @@ const Header = () => (
   <header>
     <nav>
       <ul>
-        <li>Home</li>
+        <li>
+          <a href="#">Home</a>
+        </li>
       </ul>
     </nav>
   </header>
