@@ -2,9 +2,10 @@ import Header from "./components/Header";
 
 const App = () => {
   return (
-    <div>
+    <>
       <Header />
-    </div>
+      <div style={{ backgroundColor: "#263238", height: "150vh" }}></div>
+    </>
   );
 };
 
