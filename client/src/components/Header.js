@@ -7,8 +7,10 @@ const Header = () => {
     { name: "linkedin", icon: "fab fa-linkedin" },
   ];
   const pageLinks = [
-    { name: "home", href: "!#", icon: "fas fa-home" },
-    { name: "projects", href: "!#", icon: "fas fa-code" },
+    { name: "home", href: "#home", icon: "fas fa-home" },
+    { name: "about", href: "#about" },
+    { name: "projects", href: "#projects", icon: "fas fa-code" },
+    { name: "contact", href: "#contact" },
   ];
 
   return (

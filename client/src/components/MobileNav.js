@@ -7,7 +7,7 @@ const Container = styled.div`
   }
 `;
 
-const BarContainer = styled.div`
+const Bars = styled.div`
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -21,10 +21,10 @@ const BarContainer = styled.div`
   padding: 1rem;
 `;
 
-const Bar = styled.div`
+const Bar = styled.span`
   width: 100%;
   height: 4px;
-  background-color: white;
+  background-color: #ffb86c;
   transition: 650ms;
   border-radius: 0.8rem;
 `;
@@ -54,7 +54,7 @@ const MenuContainer = styled.div`
   z-index: 50;
   top: 0;
   left: 0;
-  background: #192227;
+  background: #21222c;
   color: white;
   transition: 650ms;
   display: flex;
@@ -74,18 +74,22 @@ const Menu = styled.nav`
 
 const PageLink = styled.a`
   text-decoration: none;
-  color: white;
+  color: #ffb86c;
   margin: 1rem;
   padding: 1rem;
   font-size: 36px;
 `;
 
+const SocialLinks = styled.div`
+  display: flex;
+`;
+
 const SocialLink = styled.a`
   text-decoration: none;
-  color: white;
+  color: #ffb86c;
   margin: 1rem;
   padding: 1rem;
-  font-size: 1rem;
+  font-size: 2rem;
 `;
 
 const SocialIcon = styled.i``;
@@ -95,11 +99,11 @@ const MobileNav = ({ socialLinks, pageLinks }) => {
 
   return (
     <Container>
-      <BarContainer onClick={() => setOpen(!open)}>
+      <Bars onClick={() => setOpen(!open)}>
         <Bar1 open={open} />
         <Bar2 open={open} />
         <Bar3 open={open} />
-      </BarContainer>
+      </Bars>
 
       <MenuContainer open={open}>
         <Menu>
@@ -109,16 +113,17 @@ const MobileNav = ({ socialLinks, pageLinks }) => {
               href={pageLink.href}
               onClick={() => setOpen(false)}
             >
-              {pageLink.name}
               <SocialIcon className={pageLink.icon} />
+              {pageLink.name}
             </PageLink>
           ))}
-          {socialLinks.map(socialLink => (
-            <SocialLink key={socialLink.name} onClick={() => setOpen(false)}>
-              {socialLink.name}
-              <SocialIcon className={socialLink.icon} />
-            </SocialLink>
-          ))}
+          <SocialLinks>
+            {socialLinks.map(socialLink => (
+              <SocialLink key={socialLink.name} onClick={() => setOpen(false)}>
+                <SocialIcon className={socialLink.icon} />
+              </SocialLink>
+            ))}
+          </SocialLinks>
         </Menu>
       </MenuContainer>
     </Container>
