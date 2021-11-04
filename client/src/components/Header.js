@@ -3,14 +3,22 @@ import Navbar from "./Navbar";
 
 const Header = () => {
   const socialLinks = [
-    { name: "github", icon: "fab fa-github" },
-    { name: "linkedin", icon: "fab fa-linkedin" },
+    {
+      name: "github",
+      icon: "fab fa-github",
+      href: "https://github.com/m3tron",
+    },
+    {
+      name: "linkedin",
+      icon: "fab fa-linkedin",
+      href: "https://linkedin.com/in/sunny-heyar-264158181",
+    },
   ];
   const pageLinks = [
-    { name: "home", href: "#home", icon: "fas fa-home" },
-    { name: "about", href: "#about" },
-    { name: "projects", href: "#projects", icon: "fas fa-code" },
-    { name: "contact", href: "#contact" },
+    { name: "Home", href: "#home", icon: "fas fa-home" },
+    { name: "About", href: "#about" },
+    { name: "Projects", href: "#projects", icon: "fas fa-code" },
+    { name: "Contact", href: "#contact" },
   ];
 
   return (

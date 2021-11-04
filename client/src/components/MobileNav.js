@@ -55,7 +55,6 @@ const MenuContainer = styled.div`
   top: 0;
   left: 0;
   background: #21222c;
-  color: white;
   transition: 650ms;
   display: flex;
   justify-content: center;
@@ -119,7 +118,13 @@ const MobileNav = ({ socialLinks, pageLinks }) => {
           ))}
           <SocialLinks>
             {socialLinks.map(socialLink => (
-              <SocialLink key={socialLink.name} onClick={() => setOpen(false)}>
+              <SocialLink
+                key={socialLink.name}
+                href={socialLink.href}
+                target="_blank"
+                rel="noopener"
+                onClick={() => setOpen(false)}
+              >
                 <SocialIcon className={socialLink.icon} />
               </SocialLink>
             ))}

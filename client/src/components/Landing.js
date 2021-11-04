@@ -1,20 +1,37 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-  background: var(--primary);
-  color: #ffb86c;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 `;
 
+const Name = styled.div`
+  font-size: 2.5rem;
+  background: linear-gradient(
+    to bottom right,
+    var(--bgtwo) 0%,
+    var(--text) 100%
+  );
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  --webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: 1rem;
+`;
+
+const Title = styled.div`
+  text-align: center;
+`;
+
 const Landing = () => {
   return (
     <Container id="home">
       <div>
-        <h1>Sunny Heyar</h1>
-        <h4>Full Stack Web Developer</h4>
+        <Name>Sunny Heyar</Name>
+        <Title>Full Stack Web Developer</Title>
       </div>
     </Container>
   );
