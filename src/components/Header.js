@@ -7,11 +7,13 @@ const Header = () => {
       name: "github",
       icon: "fab fa-github",
       href: "https://github.com/m3tron",
+      colorCode: "black",
     },
     {
       name: "linkedin",
       icon: "fab fa-linkedin",
       href: "https://linkedin.com/in/sunny-heyar-264158181",
+      colorCode: "blue",
     },
   ];
   const pageLinks = [
@@ -23,7 +25,7 @@ const Header = () => {
 
   return (
     <>
-      <Navbar socialLinks={socialLinks} />
+      <Navbar socialLinks={socialLinks} pageLinks={pageLinks} />
       <MobileNav socialLinks={socialLinks} pageLinks={pageLinks} />
     </>
   );

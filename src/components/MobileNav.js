@@ -54,7 +54,9 @@ const MenuContainer = styled.div`
   z-index: 50;
   top: 0;
   left: 0;
-  background: #21222c;
+  background: #00000010;
+  backdrop-filter: blur(12px);
+  --webkit-backdrop-filter: blur(12px);
   transition: 650ms;
   display: flex;
   justify-content: center;
