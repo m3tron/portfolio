@@ -7,6 +7,10 @@ const GlobalStyle = createGlobalStyle`
     --text:#ffb86c;
   }
 
+  html{
+    scroll-behavior: smooth;
+  }
+
   body{
     ${"" /* font-family: 'Baloo 2', cursive; */}
     font-family: 'Montserrat', sans-serif;
