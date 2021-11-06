@@ -35,7 +35,7 @@ const Bar1 = styled(Bar)`
 `;
 
 const Bar2 = styled(Bar)`
-  width: 60%;
+  width: 70%;
   margin-left: auto;
   transition: 800ms;
 
@@ -44,6 +44,8 @@ const Bar2 = styled(Bar)`
 `;
 
 const Bar3 = styled(Bar)`
+  width: ${({ open }) => (open ? "100%" : "40%")};
+  margin-left: auto;
   transform: ${({ open }) => open && "rotate(405deg) translate(0rem,-0.5rem)"};
 `;
 
