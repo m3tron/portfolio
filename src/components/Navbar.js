@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Link from "next/link";
 
 const Container = styled.div`
   display: none;
@@ -18,7 +19,7 @@ const Container = styled.div`
 
 const SocialLink = styled.a`
   text-decoration: none;
-  color: var(--text);
+  color: ${({ theme }) => theme.colors.text};
   font-size: 2rem;
   margin: 1rem;
   padding: 1rem;
@@ -50,6 +51,8 @@ const Navbar = ({ socialLinks, pageLinks }) => {
           <SocialIcon className={socialLink.icon} key={socialLink.name} />
         </SocialLink>
       ))}
+      <Link href="/contact">Contact</Link>
+      <Link href="/">Home</Link>
     </Container>
   );
 };
