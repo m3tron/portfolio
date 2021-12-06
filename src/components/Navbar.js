@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Link from "next/link";
 
 const Container = styled.div`
   display: none;
@@ -15,6 +14,13 @@ const Container = styled.div`
     position: fixed;
     width: 100%;
   }
+`;
+
+const PageLink = styled.a`
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.text};
+  margin: 0.5rem;
+  padding: 1rem;
 `;
 
 const SocialLink = styled.a`
@@ -36,9 +42,9 @@ const Navbar = ({ socialLinks, pageLinks }) => {
   return (
     <Container>
       {pageLinks.map(pageLink => (
-        <a key={pageLink.name} href={pageLink.href}>
+        <PageLink key={pageLink.name} href={pageLink.href}>
           {pageLink.name}
-        </a>
+        </PageLink>
       ))}
       {socialLinks.map(socialLink => (
         <SocialLink
@@ -51,8 +57,6 @@ const Navbar = ({ socialLinks, pageLinks }) => {
           <SocialIcon className={socialLink.icon} key={socialLink.name} />
         </SocialLink>
       ))}
-      <Link href="/contact">Contact</Link>
-      <Link href="/">Home</Link>
     </Container>
   );
 };

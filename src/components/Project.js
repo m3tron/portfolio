@@ -1,20 +1,55 @@
 import styled from "styled-components";
 import Image from "next/image";
 
-const ImageWrapper = styled.div`
-  height: 100px;
-  width: 200px;
-  background: white;
+const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  perspective: 1000px;
+
+  &:hover {
+    transform: rotateY(180deg);
+    background: transparent;
+  }
 `;
 
-const Project = () => {
+const Mobile = styled.div`
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+`;
+
+const Desktop = styled.div`
+  z-index: -10;
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+`;
+
+const Information = styled.div`
+  position: relative;
+  transition: 650ms;
+  transform-style: preserve-3d;
+`;
+
+const Project = ({ name, url, description, desktopImage, mobileImage }) => {
   return (
-    <div>
-      <ImageWrapper></ImageWrapper>
-      <h3>ProjectName</h3>
-      <h4>Description</h4>
-      <div>Tech stack</div>
-    </div>
+    <Container>
+      <Mobile>
+        <Image src={mobileImage} height={500} width={250} />
+      </Mobile>
+      <Desktop>
+        <Image class="desktop" src={desktopImage} height={250} width={450} />
+      </Desktop>
+      <Information>
+        <h3>{name}</h3>
+        <h4>{description}</h4>
+        <div>Tech stack</div>
+        <a href={url}>Website</a>
+      </Information>
+    </Container>
   );
 };
 

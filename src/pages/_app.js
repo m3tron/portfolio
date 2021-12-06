@@ -32,8 +32,7 @@ const GlobalStyle = createGlobalStyle`
   @keyframes movingGradient{
   from {background-position: 0 0;}
   to {background-position: 100% 100%}
-}
-`;
+}`;
 
 const MyApp = ({ Component, pageProps }) => (
   <>
