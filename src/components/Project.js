@@ -7,6 +7,7 @@ const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   perspective: 1000px;
+  z-index: -10;
 
   &:hover {
     transform: rotateY(180deg);
@@ -21,8 +22,6 @@ const Mobile = styled.div`
 `;
 
 const Desktop = styled.div`
-  z-index: -10;
-
   @media screen and (max-width: 1024px) {
     display: none;
   }
