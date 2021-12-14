@@ -41,7 +41,7 @@ const Project = ({ name, url, description, desktopImage, mobileImage }) => {
         <Image src={mobileImage} height={500} width={250} />
       </Mobile>
       <Desktop>
-        <Image class="desktop" src={desktopImage} height={250} width={450} />
+        <Image src={desktopImage} height={250} width={450} />
       </Desktop>
       <Information>
         <h3>{name}</h3>
