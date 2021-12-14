@@ -1,4 +1,9 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const nameGradient = keyframes`
+from {background-position: 0 0;}
+  to {background-position: 100% 100%}
+`;
 
 const Container = styled.div`
   display: flex;
@@ -8,18 +13,21 @@ const Container = styled.div`
 `;
 
 const Name = styled.div`
-  font-size: 2.5rem;
+  font-family: Autography, cursive;
+  font-size: 4rem;
   background: linear-gradient(
     to bottom right,
-    var(--bgtwo) 0%,
-    var(--text) 100%
+    ${({ theme }) => theme.colors.bgSecondary} 0%,
+    ${({ theme }) => theme.colors.bgPrimary} 100%
   );
   background-clip: text;
   color: transparent;
   -webkit-background-clip: text;
   --webkit-text-fill-color: transparent;
   text-align: center;
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  background-size: 450% 450%;
+  animation: ${nameGradient} 5s ease-in-out infinite alternate;
 `;
 
 const Title = styled.div`

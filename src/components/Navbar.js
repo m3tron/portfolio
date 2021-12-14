@@ -16,9 +16,16 @@ const Container = styled.div`
   }
 `;
 
+const PageLink = styled.a`
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.text};
+  margin: 0.5rem;
+  padding: 1rem;
+`;
+
 const SocialLink = styled.a`
   text-decoration: none;
-  color: var(--text);
+  color: ${({ theme }) => theme.colors.text};
   font-size: 2rem;
   margin: 1rem;
   padding: 1rem;
@@ -35,9 +42,9 @@ const Navbar = ({ socialLinks, pageLinks }) => {
   return (
     <Container>
       {pageLinks.map(pageLink => (
-        <a key={pageLink.name} href={pageLink.href}>
+        <PageLink key={pageLink.name} href={pageLink.href}>
           {pageLink.name}
-        </a>
+        </PageLink>
       ))}
       {socialLinks.map(socialLink => (
         <SocialLink

@@ -24,7 +24,7 @@ const Bars = styled.div`
 const Bar = styled.span`
   width: 100%;
   height: 4px;
-  background-color: #ffb86c;
+  background-color: ${({ theme }) => theme.colors.text};
   transition: 650ms;
   border-radius: 0.8rem;
 `;
@@ -35,7 +35,7 @@ const Bar1 = styled(Bar)`
 `;
 
 const Bar2 = styled(Bar)`
-  width: 70%;
+  width: 75%;
   margin-left: auto;
   transition: 800ms;
 
@@ -44,7 +44,7 @@ const Bar2 = styled(Bar)`
 `;
 
 const Bar3 = styled(Bar)`
-  width: ${({ open }) => (open ? "100%" : "40%")};
+  width: ${({ open }) => (open ? "100%" : "50%")};
   margin-left: auto;
   transform: ${({ open }) => open && "rotate(405deg) translate(0rem,-0.5rem)"};
 `;
@@ -77,7 +77,7 @@ const Menu = styled.nav`
 
 const PageLink = styled.a`
   text-decoration: none;
-  color: #ffb86c;
+  color: ${({ theme }) => theme.colors.text};
   margin: 1rem;
   padding: 1rem;
   font-size: 36px;
@@ -89,7 +89,7 @@ const SocialLinks = styled.div`
 
 const SocialLink = styled.a`
   text-decoration: none;
-  color: #ffb86c;
+  color: ${({ theme }) => theme.colors.text};
   margin: 1rem;
   padding: 1rem;
   font-size: 2rem;
