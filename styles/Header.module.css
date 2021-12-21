@@ -1,0 +1,10 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.link {
+  margin: 0.5rem;
+  padding: 1rem;
+  cursor: pointer;
+}
