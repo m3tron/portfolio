@@ -3,14 +3,21 @@
   src: url(/Autography.otf);
 }
 
+:root {
+  --primary: #181818;
+  --secondary: #c78158;
+  --text: #abb2bf;
+  --outline: #db4c40;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
-  background-color: #181818;
-  color: #abb2bf;
+  background-color: var(--primary);
+  color: var(--text);
 }
 
 a {

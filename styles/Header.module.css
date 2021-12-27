@@ -1,10 +1,25 @@
 .header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  padding: 1rem;
 }
 
 .link {
   margin: 0.5rem;
   padding: 1rem;
   cursor: pointer;
+  transition: 650ms;
+  color: var(--text);
+}
+
+.link:hover {
+  color: var(--secondary);
+}
+
+.selected {
+  margin: 0.5rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: 650ms;
+  color: var(--outline);
 }

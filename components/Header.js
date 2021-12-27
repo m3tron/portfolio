@@ -1,6 +1,12 @@
+import Link from "next/link";
+import { useRouter } from "next/router";
 import styles from "../styles/Header.module.css";
 
 const Header = () => {
+  const router = useRouter();
+
+  const currentPath = router.pathname;
+
   const socialLinks = [
     {
       name: "github",
@@ -17,19 +23,25 @@ const Header = () => {
   ];
 
   const pageLinks = [
-    { name: "Home", href: "#home", icon: "fas fa-home" },
-    { name: "About", href: "#about" },
-    { name: "Projects", href: "#projects", icon: "fas fa-code" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/", icon: "fas fa-home" },
+    { name: "About", href: "/about" },
+    { name: "Projects", href: "/projects", icon: "fas fa-code" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
         {pageLinks.map(pageLink => (
-          <a className={styles.link} key={pageLink.name}>
-            {pageLink.name}
-          </a>
+          <Link href={pageLink.href} key={pageLink.name}>
+            <a
+              className={
+                currentPath === pageLink.href ? styles.selected : styles.link
+              }
+            >
+              {pageLink.name}
+            </a>
+          </Link>
         ))}
       </nav>
     </header>
