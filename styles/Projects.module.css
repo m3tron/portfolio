@@ -1,0 +1,46 @@
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-row: 3;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  place-items: center;
+  margin: 4rem;
+}
+
+.project {
+  width: 360px;
+  margin: 1rem;
+  padding: 1rem;
+  background: #abb2bf10;
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+  border-radius: 5%;
+  transition: 650ms;
+}
+
+.project:hover {
+  transform: scale(1.1);
+}
+
+.projectStack {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .grid {
+    margin: 0;
+  }
+
+  .project {
+    width: 300px;
+  }
+}

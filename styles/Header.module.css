@@ -1,10 +1,29 @@
 .header {
-  display: flex;
-  justify-content: center;
   padding: 1rem;
 }
 
-.link {
+.nav {
+  display: block;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.home {
+  font-family: Autography, cursive;
+  font-size: 2rem;
+  padding: 0;
+  transition: 650ms;
+  color: var(--secondary);
+  font-style: italic;
+}
+
+.home:hover {
+  text-shadow: 0 0 17px var(--outline);
+}
+
+.link,
+.selected {
   margin: 0.5rem;
   padding: 1rem;
   cursor: pointer;
@@ -17,9 +36,9 @@
 }
 
 .selected {
-  margin: 0.5rem;
-  padding: 1rem;
-  cursor: pointer;
-  transition: 650ms;
   color: var(--outline);
+}
+
+.hide {
+  display: none;
 }
