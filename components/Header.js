@@ -23,7 +23,6 @@ const Header = () => {
   ];
 
   const pageLinks = [
-    { name: "Home", href: "/", icon: "fas fa-home" },
     { name: "About", href: "/about" },
     { name: "Projects", href: "/projects", icon: "fas fa-code" },
     { name: "Contact", href: "/contact" },
@@ -31,6 +30,11 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
+      <Link href="/">
+        <a className={currentPath !== "/" ? styles.home : styles.hide}>
+          Sunny Heyar
+        </a>
+      </Link>
       <nav className={styles.nav}>
         {pageLinks.map(pageLink => (
           <Link href={pageLink.href} key={pageLink.name}>
