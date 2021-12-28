@@ -4,6 +4,7 @@
   grid-row: 3;
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   place-items: center;
+  margin: 4rem;
 }
 
 .project {
@@ -35,6 +36,10 @@
 }
 
 @media screen and (max-width: 600px) {
+  .grid {
+    margin: 0;
+  }
+
   .project {
     width: 300px;
   }
