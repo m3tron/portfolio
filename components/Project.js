@@ -9,22 +9,31 @@ const Project = ({ name, description, stack, href, image }) => {
           className={styles.image}
           src={image}
           alt={name}
-          width={250}
-          height={150}
+          layout="intrinsic"
+          width={700}
+          height={475}
         />
       )}
-      <div>{name}</div>
-      <div>{description}</div>
-      <div className={styles.projectStack}>
-        {stack.map(icon => (
-          <div key={icon} className={styles.icon}>
-            <span className="iconify" data-icon={icon}></span>
-          </div>
-        ))}
+      <div className={styles.info}>
+        <div>{name}</div>
+        <div>{description}</div>
+        <div className={styles.projectStack}>
+          {stack.map(icon => (
+            <a
+              key={icon.name}
+              href={icon.href}
+              target="_blank"
+              rel="noreferrer"
+              className={styles.icon}
+            >
+              <span className="iconify" data-icon={icon.name}></span>
+            </a>
+          ))}
+        </div>
+        <a href={href} className={styles.link} target="_blank" rel="noreferrer">
+          Website
+        </a>
       </div>
-      <a href={href} target="_blank" rel="noreferrer">
-        Website
-      </a>
     </div>
   );
 };

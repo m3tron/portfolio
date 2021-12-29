@@ -18,7 +18,7 @@
   background-clip: text;
   color: transparent;
   -webkit-background-clip: text;
-  --webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
   text-align: center;
   padding-bottom: 1rem;
   background-size: 250% 250%;
