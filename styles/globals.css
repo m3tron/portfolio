@@ -4,10 +4,14 @@
 }
 
 :root {
-  --primary: #181818;
-  --secondary: #c78158;
-  --text: #abb2bf;
-  --outline: #db4c40;
+  --black: #181818;
+  --yellow: #c78158;
+  --white: #abb2bf;
+  --orange: #db4c40;
+  --primary: var(--black);
+  --secondary: var(--yellow);
+  --text: var(--white);
+  --outline: var(--orange);
 }
 
 html,
@@ -16,7 +20,7 @@ body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
-  background-color: var(--primary);
+  background-color: var(--black);
   color: var(--text);
 }
 
@@ -33,9 +37,7 @@ footer {
   width: 100vw;
   display: flex;
   justify-content: center;
-  position: fixed;
-  bottom: 0;
-  left: 0;
+
   padding: 1rem;
   font-size: 0.8rem;
 }
