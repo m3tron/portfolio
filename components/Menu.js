@@ -4,9 +4,9 @@ const Menu = () => {
   return (
     <div>
       <div className={styles.bars} onClick={() => console.log("clicked bars")}>
-        <span className={styles.bar1}>&nbsp;</span>
-        <span className={styles.bar2}>&nbsp;</span>
-        <span className={styles.bar3}>&nbsp;</span>
+        <span className={styles.bar1} />
+        <span className={styles.bar2} />
+        <span className={styles.bar3} />
       </div>
     </div>
   );

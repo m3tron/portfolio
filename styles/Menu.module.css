@@ -16,11 +16,17 @@
 .bar3 {
   width: 100%;
   height: 2px;
-  background-color: var(--text);
+  background-color: var(--secondary);
   transition: 650ms;
   border-radius: 0.8rem;
 }
 
 .bar2 {
-  width: 60%;
+  width: 75%;
+  margin-left: auto;
+}
+
+.bar3 {
+  width: 50%;
+  margin-left: auto;
 }
