@@ -10,7 +10,7 @@ const Project = ({ name, description, stack, href, image }) => {
           src={image}
           alt={name}
           layout="intrinsic"
-          width={700}
+          width={720}
           height={475}
         />
       )}

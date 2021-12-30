@@ -1,12 +1,6 @@
-import Link from "next/link";
-import { useRouter } from "next/router";
 import styles from "../styles/Header.module.css";
 
 const Header = () => {
-  const router = useRouter();
-
-  const currentPath = router.pathname;
-
   const socialLinks = [
     {
       name: "github",
@@ -23,30 +17,27 @@ const Header = () => {
   ];
 
   const pageLinks = [
-    { name: "About", href: "/about" },
-    { name: "Projects", href: "/projects", icon: "fas fa-code" },
-    { name: "Contact", href: "/contact" },
+    { name: "About", href: "#about" },
+    { name: "Projects", href: "#projects", icon: "fas fa-code" },
+    { name: "Contact", href: "#contact" },
   ];
+
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
     <header className={styles.header}>
-      <Link href="/">
-        <a className={currentPath !== "/" ? styles.home : styles.hide}>
-          Sunny Heyar
-        </a>
-      </Link>
       <nav className={styles.nav}>
-        {pageLinks.map(pageLink => (
-          <Link href={pageLink.href} key={pageLink.name}>
-            <a
-              className={
-                currentPath === pageLink.href ? styles.selected : styles.link
-              }
-            >
+        <div onClick={scrollToTop} className={styles.home}>
+          Sunny Heyar
+        </div>
+
+        <div>
+          {pageLinks.map(pageLink => (
+            <a key={pageLink.name} href={pageLink.href} className={styles.link}>
               {pageLink.name}
             </a>
-          </Link>
-        ))}
+          ))}
+        </div>
       </nav>
     </header>
   );
