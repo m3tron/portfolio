@@ -1,7 +1,10 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
 
 import Landing from "../components/Landing";
+import About from "../components/About";
+import Projects from "../components/Projects";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -14,6 +17,10 @@ export default function Home() {
 
       <main>
         <Landing />
+        <About />
+        <Projects />
+        <Contact />
+        <Footer />
       </main>
     </div>
   );

@@ -34,10 +34,9 @@ a {
 }
 
 footer {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
-
   padding: 1rem;
   font-size: 0.8rem;
 }

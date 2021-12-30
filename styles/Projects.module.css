@@ -4,7 +4,7 @@
   grid-template-columns: repeat(3, minmax(380px, 1fr));
   place-items: center;
   margin: 4rem;
-  height: 70vh;
+  height: 100vh;
 }
 
 .project {

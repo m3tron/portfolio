@@ -3,10 +3,8 @@
 }
 
 .nav {
-  display: block;
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .home {
@@ -16,6 +14,7 @@
   transition: 650ms;
   color: var(--secondary);
   font-style: italic;
+  cursor: pointer;
 }
 
 .home:hover {
@@ -41,4 +40,10 @@
 
 .hide {
   display: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
