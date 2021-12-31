@@ -75,3 +75,9 @@ export const projectList = [
     image: "/sandy-x.com.png",
   },
 ];
+
+export const pageLinks = [
+  { name: "About", href: "#about" },
+  { name: "Projects", href: "#projects", icon: "fas fa-code" },
+  { name: "Contact", href: "#contact" },
+];
