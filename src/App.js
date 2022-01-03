@@ -6,6 +6,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import UpButton from "./components/UpButton";
 
 const theme = {
   colors: {
@@ -36,6 +37,11 @@ const GlobalStyle = createGlobalStyle`
     color:${theme.colors.text};
   }
 
+  a{
+    text-decoration: none;
+    color: ${theme.colors.text};
+  }
+
   @keyframes movingGradient{
   from {background-position: 0 0;}
   to {background-position: 100% 100%}
@@ -52,6 +58,7 @@ const App = () => {
       <Projects />
       <Contact />
       <Footer />
+      <UpButton />
     </ThemeProvider>
   );
 };

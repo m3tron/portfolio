@@ -18,11 +18,11 @@ export const projectList = [
     name: "Sandy-X Inc.",
     description: "Parking management application",
     stack: [
-      { name: "logos:nextjs-icon", href: "https://nextjs.org" },
+      { name: "logos:nextjs", href: "https://nextjs.org" },
       { name: "logos:bulma", href: "https://bulma.io" },
     ],
     href: "https://sandy-x.com",
-    image: "/sandy-x.com.png",
+    image: "/images/sandy-x.com.png",
   },
   {
     name: "Super Delta HVAC",
@@ -32,7 +32,7 @@ export const projectList = [
       { name: "logos:bulma", href: "https://bulma.io" },
     ],
     href: "https://superdeltahvac.ca",
-    image: "/superdeltahvac.ca.png",
+    image: "/images/superdeltahvac.ca.png",
   },
   {
     name: "Trivial Trivia",
@@ -42,7 +42,7 @@ export const projectList = [
       { name: "logos:bulma", href: "https://bulma.io" },
     ],
     href: "https://sandy-x.com",
-    image: "/sandy-x.com.png",
+    image: "/images/sandy-x.com.png",
   },
   {
     name: "Name 4",
@@ -52,7 +52,7 @@ export const projectList = [
       { name: "logos:bulma", href: "https://bulma.io" },
     ],
     href: "https://sandy-x.com",
-    image: "/sandy-x.com.png",
+    image: "/images/sandy-x.com.png",
   },
   {
     name: "Name 5",
@@ -62,7 +62,7 @@ export const projectList = [
       { name: "logos:bulma", href: "https://bulma.io" },
     ],
     href: "https://superdeltahvac.ca",
-    image: "/superdeltahvac.ca.png",
+    image: "/images/superdeltahvac.ca.png",
   },
   {
     name: "Name 6",
@@ -72,7 +72,7 @@ export const projectList = [
       { name: "logos:bulma", href: "https://bulma.io" },
     ],
     href: "https://sandy-x.com",
-    image: "/sandy-x.com.png",
+    image: "/images/sandy-x.com.png",
   },
 ];
 

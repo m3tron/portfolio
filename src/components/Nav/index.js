@@ -27,12 +27,12 @@ const Bar = styled.span`
 `;
 
 const Bar1 = styled(Bar)`
-  transform: ${({ open }) =>
-    open && "rotate(-405deg) translate(-0.0rem,0.5rem)"};
+  width: ${({ open }) => (open ? "100%" : "60%")};
+  transform: ${({ open }) => open && "rotate(-405deg) translate(0,0.5rem)"};
 `;
 
 const Bar2 = styled(Bar)`
-  width: 75%;
+  width: 100%;
   margin-left: auto;
   transition: 800ms;
   opacity: ${({ open }) => open && "0"};
@@ -40,9 +40,9 @@ const Bar2 = styled(Bar)`
 `;
 
 const Bar3 = styled(Bar)`
-  width: ${({ open }) => (open ? "100%" : "50%")};
+  width: ${({ open }) => (open ? "100%" : "60%")};
   margin-left: auto;
-  transform: ${({ open }) => open && "rotate(405deg) translate(0rem,-0.5rem)"};
+  transform: ${({ open }) => open && "rotate(405deg) translate(0,-0.6rem)"};
 `;
 
 const MenuContainer = styled.div`

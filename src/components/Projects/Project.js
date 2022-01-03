@@ -6,24 +6,16 @@ const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   perspective: 1000px;
+  margin: 1rem;
 
   &:hover {
     transform: rotateY(180deg);
     background: transparent;
+    transition: 650ms;
   }
 `;
 
-const Mobile = styled.div`
-  @media screen and (min-width: 1024px) {
-    display: none;
-  }
-`;
-
-const Desktop = styled.div`
-  @media screen and (max-width: 1024px) {
-    display: none;
-  }
-`;
+const Desktop = styled.div``;
 
 const Information = styled.div`
   position: relative;
@@ -31,20 +23,33 @@ const Information = styled.div`
   transform-style: preserve-3d;
 `;
 
-const Project = ({ name, url, description, desktopImage, mobileImage }) => {
+const Icon = styled.span`
+  width: auto;
+  height: 2rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+`;
+
+const Project = ({ name, href, description, image, stack }) => {
   return (
     <Container>
-      <Mobile>
-        <img alt={name} src={mobileImage} height={500} width={250} />
-      </Mobile>
       <Desktop>
-        <img alt={name} src={desktopImage} height={250} width={450} />
+        <img alt={name} src={image} height={250} width={450} />
       </Desktop>
       <Information>
         <h3>{name}</h3>
         <h4>{description}</h4>
-        <div>Tech stack</div>
-        <a href={url} target="_blank" rel="noreferrer">
+        {stack.map(tech => (
+          <a
+            key={tech.name}
+            href={tech.href}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon className="iconify" data-icon={tech.name}></Icon>
+          </a>
+        ))}
+        <a href={href} target="_blank" rel="noopener noreferrer">
           Website
         </a>
       </Information>
