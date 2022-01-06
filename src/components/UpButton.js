@@ -5,7 +5,7 @@ const pulse = keyframes`
     box-shadow: 0 0 0 0 rgba(240, 189, 96, 0.99);
   }
   70% {
-    box-shadow: 0 0 0 2rem rgba(240, 189, 96, 0);
+    box-shadow: 0 0 0 1rem rgba(240, 189, 96, 0);
   }
   100% {
     box-shadow: 0 0 0 0 rgba(240, 189, 96, 0);
@@ -21,13 +21,14 @@ const Button = styled.button`
   bottom: 1rem;
   right: 1rem;
   background-color: ${({ theme }) => theme.colors.bgPrimary};
-  color: ${({ theme }) => theme.colors.text};
+  color: ${({ theme }) => theme.colors.bgSecondary};
   border: none;
   height: 2.5rem;
   width: 2.5rem;
   cursor: pointer;
   margin: 1rem;
   animation: ${pulse} 2s infinite;
+  font-size: 1.5rem;
 `;
 
 const UpButton = () => {

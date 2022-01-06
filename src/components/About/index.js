@@ -6,7 +6,7 @@ const Container = styled.div`
   align-items: center;
   text-align: center;
   height: 100vh;
-  margin: 4rem 1rem 0 1rem;
+  margin: 4rem 6rem 0 6rem;
   padding-top: 4rem;
 `;
 

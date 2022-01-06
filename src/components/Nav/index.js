@@ -27,7 +27,7 @@ const Bar = styled.span`
 `;
 
 const Bar1 = styled(Bar)`
-  width: ${({ open }) => (open ? "100%" : "60%")};
+  width: ${({ open }) => (open ? "100%" : "70%")};
   transform: ${({ open }) => open && "rotate(-405deg) translate(0,0.5rem)"};
 `;
 
@@ -40,7 +40,7 @@ const Bar2 = styled(Bar)`
 `;
 
 const Bar3 = styled(Bar)`
-  width: ${({ open }) => (open ? "100%" : "60%")};
+  width: ${({ open }) => (open ? "100%" : "70%")};
   margin-left: auto;
   transform: ${({ open }) => open && "rotate(405deg) translate(0,-0.6rem)"};
 `;
