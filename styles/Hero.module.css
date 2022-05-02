@@ -17,7 +17,7 @@
 
 .typingContainer {
   display: block;
-  max-width: 100vw;
+  max-width: 100%;
 }
 
 .typed {
@@ -64,5 +64,11 @@
   }
   to {
     border-color: orange;
+  }
+}
+
+@media only screen and (max-width: 688px) {
+  .hero {
+    font-size: 1.15rem;
   }
 }
