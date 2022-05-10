@@ -7,7 +7,7 @@ const Nav = () => {
         <a href="#" className={styles.navLink}>
           Home
         </a>
-        <a href="#" className={styles.navLink}>
+        <a href="#projects" className={styles.navLink}>
           Projects
         </a>
         <a href="#" className={styles.navLink}>

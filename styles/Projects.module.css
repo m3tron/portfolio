@@ -1,0 +1,30 @@
+#projects {
+  margin: 0 2rem;
+}
+
+.title {
+  text-align: center;
+  margin: 1rem;
+  text-decoration: underline;
+}
+
+.project {
+  display: flex;
+  justify-content: space-around;
+}
+
+.image {
+  position: block;
+  width: 25%;
+}
+
+.information {
+  width: 65%;
+}
+
+.name {
+  text-align: center;
+}
+
+.description {
+}
