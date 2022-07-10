@@ -5,13 +5,7 @@
   align-items: center;
   height: 100vh;
   overflow: hidden;
-  background: linear-gradient(
-    to bottom right,
-    var(--bg-primary),
-    var(--bg-secondary)
-  );
   font-size: 2rem;
-  color: white;
   font-family: "Fira Code", monospace;
 }
 

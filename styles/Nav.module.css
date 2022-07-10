@@ -11,11 +11,11 @@
 
 .navLink {
   list-style: none;
-  color: white;
   font-size: 1rem;
   cursor: pointer;
   padding: 1rem;
   margin: 1rem;
+  transition: 500ms;
 }
 
 .navLink:hover {

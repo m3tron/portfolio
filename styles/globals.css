@@ -9,7 +9,14 @@ body {
   margin: 0;
   font-family: "Fira Sans", sans-serif;
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
+  background: linear-gradient(
+    to bottom right,
+    var(--bg-primary),
+    var(--bg-secondary)
+  );
+  background-attachment: fixed;
+  color: white;
 }
 
 section {
