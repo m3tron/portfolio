@@ -37,12 +37,12 @@ const Projects = () => {
               <div className={styles.stack}>
                 {proj.stack.map(tech => (
                   <a
-                    key={tech.class}
+                    key={tech.href}
                     href={tech.href}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className={tech.class} />
+                    {tech.icon}
                   </a>
                 ))}
               </div>

@@ -8,6 +8,10 @@
   font-size: 2rem;
 }
 
+.mobileName {
+  display: none;
+}
+
 .project {
   display: flex;
   justify-content: space-around;
@@ -51,7 +55,7 @@
 
 .stack i {
   margin-right: 1rem;
-  font-size: 3rem;
+  font-size: 2rem;
   cursor: pointer;
 }
 
@@ -67,11 +71,20 @@
   }
 
   .mobileName {
+    display: block;
     font-size: 1.2rem;
   }
 
   .image {
     margin: 1rem 0;
     width: 75%;
+  }
+
+  .links {
+    text-align: center;
+  }
+
+  .description {
+    text-align: center;
   }
 }
