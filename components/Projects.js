@@ -15,6 +15,19 @@ const Projects = () => {
           <div className={styles.information}>
             <div className={styles.name}>{proj.name}</div>
             <div className={styles.description}>{proj.description}</div>
+            <div className={styles.stack}>
+              <div>Tech Stack</div>
+              {proj.stack.map(tech => (
+                <a
+                  key={tech.href}
+                  href={tech.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {tech.icon}
+                </a>
+              ))}
+            </div>
             <div className={styles.links}>
               <a
                 className={styles.link}
@@ -34,18 +47,6 @@ const Projects = () => {
                   View Code
                 </a>
               )}
-              <div className={styles.stack}>
-                {proj.stack.map(tech => (
-                  <a
-                    key={tech.href}
-                    href={tech.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {tech.icon}
-                  </a>
-                ))}
-              </div>
             </div>
           </div>
         </div>
