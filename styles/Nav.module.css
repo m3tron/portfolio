@@ -1,0 +1,23 @@
+.header {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.nav {
+}
+
+.navLink {
+  list-style: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 1rem;
+  margin: 1rem;
+  transition: 500ms;
+}
+
+.navLink:hover {
+  color: orange;
+}
