@@ -1,5 +1,6 @@
 #projects {
   margin: 0 2rem;
+  text-align: center;
 }
 
 .title {
@@ -24,7 +25,7 @@
 }
 
 .information {
-  width: 65%;
+  width: 60%;
 }
 
 .name {
@@ -42,6 +43,7 @@
 .link {
   margin-right: 1rem;
   padding: 1rem 0;
+  font-weight: lighter;
 }
 
 .link:hover {
@@ -51,12 +53,24 @@
 
 .stack {
   margin: 2rem 0;
+  font-size: 0.8rem;
+}
+
+.stackTitle {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .stack a {
-  margin-right: 1rem;
-  font-size: 2rem;
   cursor: pointer;
+}
+
+.icon {
+  height: 36px;
+  width: 36px;
+  margin-right: 1rem;
 }
 
 @media screen and (max-width: 800px) {
@@ -80,6 +94,11 @@
     width: 75%;
   }
 
+  .information {
+    width: auto;
+    margin: 0 1rem;
+  }
+
   .links {
     text-align: center;
   }
@@ -89,6 +108,10 @@
   }
 
   .stack {
+    text-align: center;
+  }
+
+  .stackTitle {
     text-align: center;
   }
 }

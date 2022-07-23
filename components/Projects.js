@@ -15,8 +15,8 @@ const Projects = () => {
           <div className={styles.information}>
             <div className={styles.name}>{proj.name}</div>
             <div className={styles.description}>{proj.description}</div>
+            <div className={styles.stackTitle}>Tech stack</div>
             <div className={styles.stack}>
-              <div>Tech Stack</div>
               {proj.stack.map(tech => (
                 <a
                   key={tech.href}
@@ -35,7 +35,7 @@ const Projects = () => {
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                View Site
+                VIEW SITE
               </a>
               {proj.github && (
                 <a
@@ -44,7 +44,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noreferrer noopener"
                 >
-                  View Code
+                  VIEW CODE
                 </a>
               )}
             </div>
