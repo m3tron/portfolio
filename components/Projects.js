@@ -4,8 +4,8 @@ import { projectList } from "../lib/lists";
 
 const Projects = () => {
   return (
-    <section id="projects">
-      <div className={styles.title}>Portfolio</div>
+    <section id="projects" className={styles.projects}>
+      <div className={styles.title}>Projects</div>
       {projectList.map(proj => (
         <div key={proj.name} className={styles.project}>
           <div className={styles.mobileName}>{proj.name}</div>
@@ -15,8 +15,8 @@ const Projects = () => {
           <div className={styles.information}>
             <div className={styles.name}>{proj.name}</div>
             <div className={styles.description}>{proj.description}</div>
+            <div className={styles.stackTitle}>Tech stack</div>
             <div className={styles.stack}>
-              <div>Tech Stack</div>
               {proj.stack.map(tech => (
                 <a
                   key={tech.href}
@@ -35,7 +35,7 @@ const Projects = () => {
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                View Site
+                VIEW SITE
               </a>
               {proj.github && (
                 <a
@@ -44,7 +44,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noreferrer noopener"
                 >
-                  View Code
+                  VIEW CODE
                 </a>
               )}
             </div>
