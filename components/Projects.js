@@ -4,8 +4,8 @@ import { projectList } from "../lib/lists";
 
 const Projects = () => {
   return (
-    <section id="projects">
-      <div className={styles.title}>Portfolio</div>
+    <section id="projects" className={styles.projects}>
+      <div className={styles.title}>Projects</div>
       {projectList.map(proj => (
         <div key={proj.name} className={styles.project}>
           <div className={styles.mobileName}>{proj.name}</div>

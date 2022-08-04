@@ -1,12 +1,13 @@
-#projects {
-  margin: 0 2rem;
-  text-align: center;
+.projects {
+  margin: 0 auto;
+  max-width: 70%;
 }
 
 .title {
   text-align: center;
-  margin: 1rem;
+  margin: 1rem 1rem 4rem 1rem;
   font-size: 2rem;
+  font-family: "Fira Code", monospace;
 }
 
 .mobileName {
@@ -71,6 +72,12 @@
   height: 36px;
   width: 36px;
   margin-right: 1rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .projects {
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 800px) {
