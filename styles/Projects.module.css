@@ -23,6 +23,7 @@
 .image {
   position: block;
   width: 25%;
+  margin: auto 0;
 }
 
 .information {

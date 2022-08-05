@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import Nav from "../components/Nav";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
+import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
         <Nav />
         <Hero />
         <Projects />
+        <Contact />
         <Footer />
       </main>
 
