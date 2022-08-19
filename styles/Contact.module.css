@@ -5,7 +5,7 @@
 }
 
 .contact a {
-  color: orange;
+  color: var(--bg-secondary);
 }
 
 .title {
@@ -14,92 +14,13 @@
   font-family: "Fira Code", monospace;
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  margin: 2rem 0;
-}
-
-/* .information {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-} */
-
-/* .input {
-  margin: 1rem 0;
-  text-align: center;
-  padding: 1rem;
-  background-color: transparent;
-  border: none;
-  border-bottom: 3px solid orange;
-  color: white;
-} */
-
-.input {
-  font-size: 14px;
-  position: relative;
-  transition: 650ms;
-  margin: 2rem 0;
-}
-
-.input input,
-.input textarea {
-  border: none;
-  -webkit-appearance: none;
-  -ms-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: transparent;
-  padding: 12px;
-  border-radius: 3px;
-  min-width: 50%;
-  font-size: 14px;
-  border-bottom: 3px solid orange;
-  border-top: 20px solid transparent;
-  resize: none;
-  color: white;
-}
-
-.input textarea {
-  height: 150px;
-}
-
-.input label {
-  position: absolute;
-  left: 12px;
-  /* bottom: 50%; */
-  top: 22px;
-  transform: translateY(-50%);
-  width: calc(100% - 24px);
-  color: white;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  transition: top 650ms ease, color 650ms ease, font-size 650ms ease;
-}
-
-.input input:focus + label,
-.input textarea:focus + label {
-  top: -10px;
-  font-size: 10px;
-  color: orange;
-}
-
-.submitButton {
+.emailButton {
   width: 150px;
   height: 50px;
-  margin: 1rem auto;
+  margin: 2rem auto 4rem;
   background: orange;
   border: none;
   border-radius: 10px;
   color: var(--bg-secondary);
   cursor: pointer;
-}
-
-@media only screen and (max-width: 688px) {
-  .input input,
-  .input textarea {
-    min-width: 100%;
-  }
 }
