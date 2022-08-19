@@ -1,6 +1,5 @@
 import styles from "../styles/Contact.module.css";
 import { useState } from "react";
-import axios from "axios";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -10,16 +9,7 @@ const Contact = () => {
   const onSubmit = async event => {
     event.preventDefault();
 
-    // https://calm-caverns-97054.herokuapp.com/ //
-
-    const response = await axios.post(
-      "https://calm-caverns-97054.herokuapp.com/sendmail",
-      { name, email, message }
-    );
-
-    if (response.status === 200) {
-      console.log(success);
-    }
+    console.log(success);
   };
 
   return (
