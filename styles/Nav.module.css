@@ -1,17 +1,85 @@
-.header {
+.hamburger {
   position: absolute;
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  margin-top: 1rem;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  padding: 1rem;
+  z-index: 100;
+}
+
+.hamburgerOpen {
+  composes: hamburger;
+  position: fixed;
+}
+
+.line {
+  width: 35px;
+  height: 5px;
+  background-color: orange;
+  border-radius: 5px;
+  transition: 650ms;
+}
+
+.top {
+  composes: line;
+  margin-bottom: 5px;
+}
+
+.topOpen {
+  composes: top;
+  transform: translateY(10px) rotate(405deg);
+}
+
+.middle {
+  composes: line;
+  margin-bottom: 5px;
+  width: 20px;
+}
+
+.middleOpen {
+  composes: middle;
+  transform: translateX(-100px);
+  opacity: 0;
+}
+
+.bottom {
+  composes: line;
+}
+
+.bottomOpen {
+  composes: bottom;
+  transform: translateY(-10px) rotate(-405deg);
 }
 
 .nav {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #0000009d;
+  backdrop-filter: blur(12px);
+  transition: all 650ms cubic-bezier(1, 0, 0, 1);
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  z-index: 50;
+  transform: translateY(-100vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navOpen {
+  composes: nav;
+  transform: translateY(0);
+  border-bottom-right-radius: 0%;
+  border-bottom-left-radius: 0%;
 }
 
 .navLink {
   list-style: none;
-  font-size: 1rem;
+  font-size: 2rem;
   cursor: pointer;
   padding: 1rem;
   margin: 1rem;
