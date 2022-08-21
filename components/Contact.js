@@ -13,12 +13,14 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className={styles.contact}>
-      <div className={styles.title}>Contact</div>
-      <div>You can get in touch with me at sunny.heyar@gmail.com</div>
-      <button className={styles.emailButton}>
-        <a href="mailto:sunny.heyar@gmail.com">E-mail me</a>
-      </button>
+    <section id="contact">
+      <div className={styles.contact}>
+        <div className={styles.title}>Contact</div>
+        <div>You can get in touch with me at sunny.heyar@gmail.com</div>
+        <button className={styles.emailButton}>
+          <a href="mailto:sunny.heyar@gmail.com">E-mail me</a>
+        </button>
+      </div>
     </section>
   );
 };

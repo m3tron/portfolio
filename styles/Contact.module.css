@@ -5,11 +5,11 @@
 }
 
 .contact a {
-  color: var(--bg-secondary);
+  color: black;
 }
 
 .title {
-  margin: 1rem 1rem 4rem 1rem;
+  padding: 1rem 1rem 4rem 1rem;
   font-size: 2rem;
   font-family: "Fira Code", monospace;
 }
@@ -18,9 +18,9 @@
   width: 150px;
   height: 50px;
   margin: 2rem auto 4rem;
-  background: orange;
+  background: var(--pop);
   border: none;
   border-radius: 10px;
-  color: var(--bg-secondary);
+  box-shadow: 0 0 5px orange;
   cursor: pointer;
 }

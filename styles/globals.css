@@ -1,6 +1,7 @@
 :root {
-  --bg-primary: #403f44;
+  --bg-primary: rgb(37, 38, 39);
   --bg-secondary: #1e1b32;
+  --pop: rgb(199, 129, 0);
 }
 
 html,
@@ -9,18 +10,17 @@ body {
   margin: 0;
   font-family: "Fira Sans", sans-serif;
   scroll-behavior: smooth;
-  /* scroll-snap-type: y mandatory; */
-  background: linear-gradient(
-    to bottom right,
-    var(--bg-primary),
-    var(--bg-secondary)
-  );
-  background-attachment: fixed;
-  color: white;
+}
+
+main {
+  scroll-behavior: smooth;
 }
 
 section {
-  scroll-snap-align: start;
+  background-color: var(--bg-primary);
+  width: 100vw;
+  color: white;
+  scroll-behavior: smooth;
 }
 
 a {

@@ -22,7 +22,7 @@ const Nav = () => {
       </div>
 
       <nav className={!open ? styles.nav : styles.navOpen}>
-        {link("#", "Home")}
+        {link("#home", "Home")}
         {link("#projects", "Projects")}
         {link("#contact", "Contact")}
       </nav>
