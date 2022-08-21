@@ -1,17 +1,38 @@
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+  background-color: none;
+}
+
+.background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  transform: translateZ(-10px) scale(2);
+}
+
 .hero {
+  font-size: 2rem;
+  font-family: "Fira Code", monospace;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  overflow: hidden;
-  font-size: 2rem;
-  font-family: "Fira Code", monospace;
 }
 
 .typingContainer {
   display: block;
   max-width: 100%;
+  color: white;
+  text-shadow: 0 0 5px black;
 }
 
 .typed {
@@ -40,7 +61,7 @@
 
 .name {
   font-weight: bolder;
-  color: orange;
+  color: var(--pop);
 }
 
 @keyframes typing {
@@ -57,7 +78,7 @@
     border-color: transparent;
   }
   to {
-    border-color: orange;
+    border-color: var(--pop);
   }
 }
 

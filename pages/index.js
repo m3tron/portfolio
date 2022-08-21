@@ -16,12 +16,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <main>
         <Nav />
-        <Hero />
-        <Projects />
-        <Contact />
-        <Footer />
+        <div className={styles.wrapper}>
+          <Hero />
+          <Projects />
+          <Contact />
+          <Footer />
+        </div>
       </main>
 
       <footer className={styles.footer}></footer>

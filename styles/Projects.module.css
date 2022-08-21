@@ -1,11 +1,12 @@
 .projects {
   margin: 0 auto;
-  max-width: 70%;
+  max-width: 100%;
 }
 
 .title {
   text-align: center;
-  margin: 1rem 1rem 4rem 1rem;
+  padding: 4rem 1rem;
+  padding-top: 4rem;
   font-size: 2rem;
   font-family: "Fira Code", monospace;
 }
@@ -17,13 +18,15 @@
 .project {
   display: flex;
   justify-content: space-around;
-  margin: 2rem 0;
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 70%;
 }
 
 .image {
   position: block;
   width: 25%;
-  margin: auto 0;
+  margin: auto;
 }
 
 .information {
@@ -39,11 +42,12 @@
 }
 
 .links {
+  display: flex;
+  gap: 1rem;
   margin: 2rem 0;
 }
 
 .link {
-  margin-right: 1rem;
   padding: 1rem 0;
   font-weight: lighter;
 }
@@ -108,7 +112,7 @@
   }
 
   .links {
-    text-align: center;
+    justify-content: center;
   }
 
   .description {

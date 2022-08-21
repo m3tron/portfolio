@@ -3,10 +3,12 @@
   text-align: center;
   padding: 1rem 0;
   position: relative;
+  background-color: var(--bg-primary);
+  color: var(--pop);
 }
 
 .backToTop {
-  background-color: orange;
+  background-color: rgb(199, 129, 0);
   top: -1rem;
   right: 1.5rem;
   position: absolute;
