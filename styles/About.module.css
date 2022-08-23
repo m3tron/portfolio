@@ -1,10 +1,10 @@
 .about {
-  height: 80vh;
+  height: 100vh;
 }
 
 .title {
   text-align: center;
-  padding: 4rem 0;
+  padding: 4rem 0 2rem;
   font-family: "Fira Code", monospace;
   font-size: 2rem;
   color: var(--pop);
@@ -21,6 +21,7 @@
 }
 
 .image {
-  box-shadow: 0 0 25px var(--pop);
   border-radius: 50%;
+  box-shadow: 0 0 25px black;
+  background: url(../public/trees.jpg) bottom;
 }
