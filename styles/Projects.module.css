@@ -9,6 +9,7 @@
   padding-top: 4rem;
   font-size: 2rem;
   font-family: "Fira Code", monospace;
+  color: var(--pop);
 }
 
 .mobileName {
@@ -20,7 +21,7 @@
   justify-content: space-around;
   margin: 0 auto;
   padding: 2rem;
-  max-width: 70%;
+  max-width: 100%;
 }
 
 .image {
@@ -30,7 +31,7 @@
 }
 
 .information {
-  width: 60%;
+  width: 50%;
 }
 
 .name {
@@ -53,7 +54,7 @@
 }
 
 .link:hover {
-  color: orange;
+  color: var(--pop);
   transition-duration: 650ms;
 }
 

@@ -1,6 +1,6 @@
 .wrapper {
   height: 100vh;
-  overflow-y: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
   perspective: 10px;
   scroll-behavior: smooth;

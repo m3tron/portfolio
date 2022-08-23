@@ -2,25 +2,49 @@
   width: 60%;
   text-align: center;
   margin: 0 auto;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.3rem;
 }
 
 .contact a {
-  color: black;
+  color: var(--bg-primary);
 }
 
 .title {
-  padding: 1rem 1rem 4rem 1rem;
+  padding: 4rem 1rem;
   font-size: 2rem;
   font-family: "Fira Code", monospace;
+  text-align: center;
+  color: var(--pop);
 }
 
 .emailButton {
   width: 150px;
   height: 50px;
-  margin: 2rem auto 4rem;
+  margin: 4rem auto;
   background: var(--pop);
   border: none;
   border-radius: 10px;
-  box-shadow: 0 0 5px orange;
+  box-shadow: 0 0 25px black;
   cursor: pointer;
+  font-size: 1rem;
+}
+
+.emailButton:hover {
+  box-shadow: 0 0 0;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 4rem;
+  margin-top: 4rem;
+}
+
+.icon {
+  height: 48px;
+  width: 48px;
 }
