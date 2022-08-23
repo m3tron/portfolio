@@ -1,0 +1,26 @@
+.about {
+  height: 80vh;
+}
+
+.title {
+  text-align: center;
+  padding: 4rem 0;
+  font-family: "Fira Code", monospace;
+  font-size: 2rem;
+  color: var(--pop);
+}
+
+.information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  height: 100%;
+  padding: 0 0 8rem;
+}
+
+.image {
+  box-shadow: 0 0 25px var(--pop);
+  border-radius: 50%;
+}
