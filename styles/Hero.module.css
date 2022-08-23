@@ -19,7 +19,7 @@
 }
 
 .hero {
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: "Fira Code", monospace;
   z-index: 1;
   display: flex;
@@ -79,6 +79,12 @@
   }
   to {
     border-color: var(--pop);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero {
+    font-size: 2rem;
   }
 }
 
