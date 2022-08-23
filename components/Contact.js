@@ -17,13 +17,8 @@ const Contact = () => {
     <section id="contact">
       <div className={styles.title}>Contact Me</div>
       <div className={styles.contact}>
-        <div>
-          Interested in collaborating? Please send me an e-mail and I'll be
-          happy to connect.
-        </div>
-        {/* <button className={styles.emailButton}>
-          <a href="mailto:sunny.heyar@gmail.com">E-mail me</a>
-        </button> */}
+        <div>Interested in collaborating?</div>
+        <div>Please send me an e-mail and I'll be happy to connect.</div>
         <div className={styles.socialIcons}>
           <a
             href="mailto:sunny.heyar@gmail.com"
