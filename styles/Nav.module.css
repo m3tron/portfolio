@@ -91,5 +91,5 @@
 }
 
 .navLink:hover {
-  color: orange;
+  color: var(--pop);
 }
