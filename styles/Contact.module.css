@@ -20,6 +20,7 @@
   font-family: "Fira Code", monospace;
   text-align: center;
   color: var(--pop);
+  text-shadow: 0 0 25px black;
 }
 
 .emailButton {
@@ -47,4 +48,9 @@
 .icon {
   height: 48px;
   width: 48px;
+  transition: 200ms;
+}
+
+.icon:hover {
+  transform: translateY(-7px);
 }
