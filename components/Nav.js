@@ -23,6 +23,7 @@ const Nav = () => {
 
       <nav className={!open ? styles.nav : styles.navOpen}>
         {link("#home", "Home")}
+        {link("#about", "About Me")}
         {link("#projects", "My Projects")}
         {link("#contact", "Contact Me")}
       </nav>
