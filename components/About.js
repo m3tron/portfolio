@@ -13,7 +13,9 @@ const About = () => {
           </p>
           <p>
             I mostly develop using the MERN stack, but I'm highly adaptable to
-            any tool or technology a project requires.
+            any tool or technology a project requires. I'm continuously learning
+            about new web concepts and enjoy the technological challenges they
+            present.
           </p>
           <p>
             When I'm not coding, you can find me in the gym, at the park playing
