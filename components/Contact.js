@@ -1,24 +1,13 @@
 import styles from "../styles/Contact.module.css";
-import { useState } from "react";
 import { Github, Linkedin, Maildotru } from "@icons-pack/react-simple-icons";
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  const onSubmit = async event => {
-    event.preventDefault();
-
-    console.log(success);
-  };
-
   return (
     <section id="contact">
       <div className={styles.title}>Contact Me</div>
       <div className={styles.contact}>
-        <div>Interested in collaborating?</div>
-        <div>Please send me an e-mail and I'll be happy to connect.</div>
+        <p>Interested in collaborating?</p>
+        <p>Please send me an e-mail and I'll be happy to connect.</p>
         <div className={styles.socialIcons}>
           <a
             href="mailto:sunny.heyar@gmail.com"
